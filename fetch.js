@@ -42,3 +42,7 @@ const newProducts = { name: 'webcam', price: 700, brand: 'lal' };
 //এখানে একটা নতুন ভেরিয়েবল এর ভিতর নতুন কিন্তু হুবহু কপি products এর ভিতর newProducts কে যোগ করলাম|
 const newProduct = [...products, newProducts];
 console.log(newProduct)
+
+//creat a new array withort one specific item
+//remove phone means create a new array wihout the phone
+const remaing = products.filter(p => p.name !== 'phone')
